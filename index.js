@@ -3,6 +3,20 @@ const config = require("./config.json");
 const bot = new Discord.Client();
 const fs = require("fs");
 bot.commands = new Discord.Collection();
+
+var express = require('express')
+var app = express()
+
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/', function (req, res) {
+  res.send('hello world')
+})
+
+
+
+
+
+
 if (config.token === "setmeplease")
     return console.log(
         "Set your token up! Go to https://www.discordapp.com/developers and generate a token from a bot user."
