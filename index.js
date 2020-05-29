@@ -4,18 +4,10 @@ const bot = new Discord.Client();
 const fs = require("fs");
 bot.commands = new Discord.Collection();
 
-var express = require('express')
-var app = express()
+var express = require("express");
+var app = express();
 
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/', function (req, res) {
-  res.send('hello world')
-})
-
-
-
-
-
+const PORT = process.env.PORT || 8080;
 
 if (config.token === "setmeplease")
     return console.log(
@@ -57,3 +49,12 @@ bot.on("message", async (message) => {
 });
 
 bot.login(config.token);
+
+app.listen(PORT, () => {
+    console.log(`Server running at port: ${PORT}`);
+});
+
+// respond with "hello world" when a GET request is made to the homepage
+app.get("/", function (req, res) {
+    res.render("hello world");
+});
