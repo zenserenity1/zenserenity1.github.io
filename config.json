@@ -1,4 +1,4 @@
 {
     "prefix": "!",
-    "token": process.env.DB_HOST
+    "token": process.env.TOKEN
 }
