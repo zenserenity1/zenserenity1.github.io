@@ -14,7 +14,7 @@
     "homepage": "https://zenserenity1.github.io/",
     "dependencies": {
         "discord.js": "^11.6.4",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "fs": "0.0.1-security",
         "gh-pages": "^2.2.0",
         "ms": "^2.1.2"
